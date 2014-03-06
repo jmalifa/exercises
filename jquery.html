@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>jQuery</title>
+	
+	
+	<style>
+	#to-fade {
+		height:1000px;
+		width: 1000px;
+		background-color: red;
+	}
+
+	body {
+
+		height:4000px;
+	}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+
+</head>
+<body>
+	<div id="to-fade"></div>
+
+<script>
+
+	function fadeFunction() 
+	{	
+		$( "#to-fade" ).fadeOut( "slow" );
+		$( "#to-fade" ).fadeIn( "slow" );
+	}
+
+
+
+	$( window ).scroll(fadeFunction());
+
+	
+
+
+	// var boxtofade = $("#to-fade");
+
+	// boxtofade.scroll(function() {
+
+	// boxtofade.fadeOut("slow"); 
+
+	// });
+
+	</script>
+
+</body>
+</html>
